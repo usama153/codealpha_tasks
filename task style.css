@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Card Style */
+.card {
+  background-color: #fff;
+  padding: 35px 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+/* Headings */
+.card h1 {
+  font-size: 26px;
+  color: #0077b6;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #444;
+}
+
+/* Input Field */
+input[type="date"] {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="date"]:focus {
+  border-color: #00aaff;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00aaff;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #008ecc;
+}
+
+/* Result and Error Messages */
+.result,
+.error {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.result {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.error {
+  color: crimson;
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .card {
+    padding: 25px 20px;
+  }
+
+  .card h1 {
+    font-size: 22px;
+  }
+
+  input[type="date"],
+  button {
+    font-size: 15px;
+  }
+}
