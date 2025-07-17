@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Age Calculator</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="task style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+
+      <!-- Heading -->
+      <h1>Smart Age Calculator</h1>
+      <p style="font-size: 14px; color: #555; margin-bottom: 20px; line-height: 1.6;">
+        Find out your exact age in <b>years, months, and days</b>.<br>
+        You’ll also see <b>how many days are left for your next birthday!</b>
+      </p>
+
+      <!-- Show Current Date & Time -->
+      <div id="currentDateTime" style="font-size:14px; margin-bottom:15px; color:#666;"></div>
+
+      <!-- Input Section -->
+      <label for="dob" style="font-size: 15px; font-weight: 500; display: block; margin-bottom: 8px; color: #333;">
+        Select your Date of Birth:
+      </label>
+      <input type="date" id="dob" />
+
+      <button onclick="calculateAge()">Calculate Your Age</button>
+
+      <!-- Result Section -->
+      <div class="result" id="result"></div>
+      <div class="next-birthday" id="nextBirthday"></div>
+      <div class="error" id="error"></div>
+
+      <!-- Fun Facts Section -->
+      <div class="fun-facts" style="margin-top: 20px; padding: 10px; background: #f8f8f8; border-radius: 8px;">
+        <h3> Fun Fact</h3>
+        <p id="funFact" style="font-size: 14px; color: #444;">
+          Your fun fact will appear here after calculation!
+        </p>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer" style="margin-top:20px; font-size:13px; color:#777;">
+        Developed by <strong>Usama Intern</strong>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- External JS File -->
+  <script src="task js.js"></script>
+</body>
+</html>
